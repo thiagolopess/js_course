@@ -7,6 +7,7 @@ console.log(hw);
 
 // Primitive data types
 
+/*
 // Number:
 let age = 32;
 
@@ -36,4 +37,21 @@ console.log(year);
 
 // NULL problem
 console.log(typeof null);
+*/
 
+// var, let and const
+
+// let
+let age = 20;
+age = 15; // Mutation
+
+// const
+const birthYear = 1991; // Constant (cannot be mutated)
+
+/* Illegal
+const job;
+*/ 
+
+// var
+var job = 'programmer';
+job = 'teacher';
