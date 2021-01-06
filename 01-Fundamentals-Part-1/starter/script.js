@@ -216,6 +216,7 @@ if (height) {
 
 /////////////// Equality Operators: == vs. ===
 
+/*
 const age = 18;
 if (age === '18') console.log('You just became an adult! (strict)');
 
@@ -234,4 +235,30 @@ if (favoriteNumber === 23) {
 
 if (favoriteNumber !== 5) {
     console.log("It's not five.");
+}
+*/
+
+/////////////// Logical Operators
+
+const hasDriversLicence = true; // A
+const hasGoodVision = true; // B
+const isTired = true; // C
+
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence && !hasGoodVision);
+console.log(hasDriversLicence || !hasGoodVision);
+console.log(!hasDriversLicence);
+
+/*
+if (hasDriversLicence && hasGoodVision) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive.');
+}
+*/
+
+if (hasDriversLicence && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive.');
 }
