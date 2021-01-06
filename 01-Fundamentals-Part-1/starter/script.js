@@ -61,6 +61,7 @@ job = 'teacher';
 
 // Basic operators
 
+/*
 // Arithmetic operators
 const currentYear = 2021;
 const ageThiago = currentYear - 2000;
@@ -88,3 +89,16 @@ console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 console.log(isFullAge);
+*/
+
+const currentYear = 2021;
+const ageThiago = currentYear - 2000;
+const ageSarah = currentYear - 2010;
+
+console.log(currentYear - 2000 > currentYear - 2010);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+const averageAge = (ageThiago + ageSarah) / 2;
+console.log(ageThiago, ageSarah, averageAge);
