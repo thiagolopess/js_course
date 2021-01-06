@@ -189,6 +189,7 @@ console.log('30' - 15 + '1' - 2);
 
 // 5 falsy values: 0, '', undefined, null, NaN
 
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean(null));
@@ -210,4 +211,27 @@ if (height) {
     console.log('YAY! Height is defined!');
 } else {
     console.log('Height is undefined.');
+}
+*/
+
+/////////////// Equality Operators: == vs. ===
+
+const age = 18;
+if (age === '18') console.log('You just became an adult! (strict)');
+
+if (age == '18') console.log('You just became an adult! (loose)');
+
+const favoriteNumber = Number(prompt("What's your favorite number?"));
+console.log(typeof favoriteNumber);
+
+if (favoriteNumber === 23) {
+    console.log("Wow! 23");
+} else if (favoriteNumber === 5) {
+    console.log("Wow! 5");
+} else {
+    console.log("Wow, nice number!");
+}
+
+if (favoriteNumber !== 5) {
+    console.log("It's not five.");
 }
