@@ -163,6 +163,7 @@ console.log(century);
 
 /////////////// Type conversion and cercion
 
+/*
 // Type conversion
 var inputYear = '1991';
 console.log(Number(inputYear));
@@ -178,7 +179,35 @@ console.log(String(23), 23);
 // plus operator converts everything into string
 console.log('I am ' + 23 + ' years old');
 
-// all other arithmatic operators converts everything into numbers 
+// all other arithmatic operators converts everything into numbers
 console.log('23' - '10' - 3);
 console.log('54' * '2' - 1);
 console.log('30' - 15 + '1' - 2);
+*/
+
+/////////////// Truthy and Falsy Values
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(4 / 'Thiago'));
+console.log(Boolean(''));
+
+console.log(Boolean({}));
+
+const money = 1;
+if (money) {
+    console.log('Don\'t spend it all ;)');
+} else {
+    console.log('You should get a job.');
+}
+
+let height;
+
+if (height) {
+    console.log('YAY! Height is defined!');
+} else {
+    console.log('Height is undefined.');
+}
