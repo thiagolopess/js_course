@@ -2,7 +2,7 @@ console.log("--------------------------------\nAssignments\n--------------------
 
 /////////////// LECTURE: Values and Variables
 const country = 'Brazil', continent = 'South America';
-let population = '200000000';
+let population = 200000000;
 
 console.log(country, continent, population);
 
@@ -37,3 +37,10 @@ console.log(description);
 /////////////// LECTURE: Strings and Template Literals
 description = `${country} is in ${continent} and its ${population} people speak ${language}`;
 console.log(description);
+
+/////////////// LECTURE: Taking Decisions: if / else Statements
+if (population > 33000000) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    console.log(`${country}'s population is ${33000000 - population} below average`);
+}
