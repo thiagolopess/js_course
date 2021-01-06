@@ -1,3 +1,4 @@
+console.log("--------------------------------\nLectures\n--------------------------------")
 // Hello World
 
 /*
@@ -41,6 +42,7 @@ console.log(typeof null);
 
 // var, let and const
 
+/*
 // let
 let age = 20;
 age = 15; // Mutation
@@ -48,10 +50,41 @@ age = 15; // Mutation
 // const
 const birthYear = 1991; // Constant (cannot be mutated)
 
-/* Illegal
-const job;
-*/ 
+
+// const job; Illegal
+
 
 // var
 var job = 'programmer';
 job = 'teacher';
+*/
+
+// Basic operators
+
+// Arithmetic operators
+const currentYear = 2021;
+const ageThiago = currentYear - 2000;
+const ageSarah = currentYear - 2010;
+console.log(ageThiago, ageSarah);
+
+console.log(ageThiago * 2, ageThiago / 10, 2 ** 3);
+// 2 ** 3 = 2^3 = 2 * 2 * 2;
+
+const firstName = 'Thiago';
+const lastName = 'Santos';
+console.log(firstName + ' ' + lastName);
+
+// Assignment operators
+let x = 10 + 5;
+x += 10;
+x -= 2;
+x++;
+x--;
+console.log(x);
+
+// Comparison operators
+console.log(ageThiago > ageSarah); // >, <, >=, <=
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+console.log(isFullAge);
