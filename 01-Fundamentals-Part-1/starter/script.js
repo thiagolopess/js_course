@@ -1,12 +1,14 @@
 console.log("--------------------------------\nLectures\n--------------------------------")
-// Hello World
+
+/////////////// Hello World
 
 /*
 let hw = 'hello world';
 console.log(hw);
 */
 
-// Primitive data types
+
+/////////////// Primitive data types
 
 /*
 // Number:
@@ -40,7 +42,8 @@ console.log(year);
 console.log(typeof null);
 */
 
-// var, let and const
+
+/////////////// var, let and const
 
 /*
 // let
@@ -59,7 +62,8 @@ var job = 'programmer';
 job = 'teacher';
 */
 
-// Basic operators
+
+/////////////// Basic operators
 
 /*
 // Arithmetic operators
@@ -91,6 +95,9 @@ const isFullAge = ageSarah >= 18;
 console.log(isFullAge);
 */
 
+/////////////// Operators precedences
+
+/*
 const currentYear = 2021;
 const ageThiago = currentYear - 2000;
 const ageSarah = currentYear - 2010;
@@ -102,3 +109,31 @@ x = y = 25 - 10 - 5;
 console.log(x, y);
 const averageAge = (ageThiago + ageSarah) / 2;
 console.log(ageThiago, ageSarah, averageAge);
+*/
+
+/////////////// Strings and template literals
+
+const firstName = 'Thiago';
+const job = 'Software Engineer';
+const birthYear = 2000;
+const year = 2020;
+
+// Old way
+const oldThiago = 'I\'m ' + firstName + ', a ' + (year - birthYear) + ' years old ' + job;
+console.log(oldThiago);
+
+// New way (Template literals)
+const newThiago = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+console.log(newThiago);
+
+// Creating multiple lines
+
+// Old way
+console.log('String with \n\
+multiple\n\
+lines.');
+
+// New way
+console.log(`String with
+multiple
+lines.`)
