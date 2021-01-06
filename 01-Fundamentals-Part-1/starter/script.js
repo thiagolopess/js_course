@@ -1,4 +1,4 @@
-console.log("--------------------------------\nLectures\n--------------------------------")
+console.log("--------------------------------\nLectures\n--------------------------------");
 
 /////////////// Hello World
 
@@ -6,7 +6,6 @@ console.log("--------------------------------\nLectures\n-----------------------
 let hw = 'hello world';
 console.log(hw);
 */
-
 
 /////////////// Primitive data types
 
@@ -41,7 +40,6 @@ console.log(year);
 // NULL problem
 console.log(typeof null);
 */
-
 
 /////////////// var, let and const
 
@@ -142,6 +140,7 @@ lines.`)
 
 /////////////// if/else statements
 
+/*
 const age = 15;
 const isOldEnough = age >= 18;
 
@@ -160,3 +159,26 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+
+/////////////// Type conversion and cercion
+
+// Type conversion
+var inputYear = '1991';
+console.log(Number(inputYear));
+console.log(inputYear + 18);
+
+console.log(Number('Thiago'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type coercion
+
+// plus operator converts everything into string
+console.log('I am ' + 23 + ' years old');
+
+// all other arithmatic operators converts everything into numbers 
+console.log('23' - '10' - 3);
+console.log('54' * '2' - 1);
+console.log('30' - 15 + '1' - 2);
