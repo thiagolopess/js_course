@@ -30,9 +30,22 @@ const percentageOfWorld2 = function (population) {
     return population * 100 / 7900;
 }
 
-const brazil1 = percentageOfWorld2(200);
-console.log(brazil1);
-const usa1 = percentageOfWorld2(300);
-console.log(usa1);
-const canada1 = percentageOfWorld2(37);
-console.log(canada1);
+/*
+const brazil2 = percentageOfWorld2(200);
+console.log(brazil2);
+const usa2 = percentageOfWorld2(300);
+console.log(usa2);
+const canada2 = percentageOfWorld2(37);
+console.log(canada2);
+*/
+
+///////////////  3- LECTURE: Arrow Functions
+
+const percentageOfWorld3 = population => population * 100 / 7900;
+
+const brazil3 = percentageOfWorld3(200);
+console.log(brazil3);
+const usa3 = percentageOfWorld3(300);
+console.log(usa3);
+const canada3 = percentageOfWorld3(37);
+console.log(canada3);
