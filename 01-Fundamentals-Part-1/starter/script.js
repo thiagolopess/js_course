@@ -267,6 +267,7 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 
 /////////////// The switch Statement
 
+/*
 const day = 'hello world';
 
 switch (day) {
@@ -305,4 +306,24 @@ if (day === 'monday') {
     } else {
         console.log(`Invalid day.`);
     }
+}
+*/
+
+/////////////// Statements and Expressions
+
+// Expressions
+3 + 4;
+2 > 3;
+4 && 5;
+
+// Statements
+if (2 > 3) {
+    console.log('Impossible');
+}
+switch (3 + 4) {
+    case 8:
+        console.log('Wow!');
+        break;
+    default:
+        break;
 }
