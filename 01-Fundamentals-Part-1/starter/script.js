@@ -240,6 +240,7 @@ if (favoriteNumber !== 5) {
 
 /////////////// Logical Operators
 
+/*
 const hasDriversLicence = true; // A
 const hasGoodVision = true; // B
 const isTired = true; // C
@@ -249,16 +250,59 @@ console.log(hasDriversLicence && !hasGoodVision);
 console.log(hasDriversLicence || !hasGoodVision);
 console.log(!hasDriversLicence);
 
-/*
-if (hasDriversLicence && hasGoodVision) {
+
+// if (hasDriversLicence && hasGoodVision) {
+//     console.log('Sarah is able to drive!');
+// } else {
+//     console.log('Someone else should drive.');
+// }
+
+
+if (hasDriversLicence && hasGoodVision && !isTired) {
     console.log('Sarah is able to drive!');
 } else {
     console.log('Someone else should drive.');
 }
 */
 
-if (hasDriversLicence && hasGoodVision && !isTired) {
-    console.log('Sarah is able to drive!');
+/////////////// The switch Statement
+
+const day = 'hello world';
+
+switch (day) {
+    case 'monday':
+        console.log(`Study data structures.`);
+        break;
+    case 'tuesday':
+        console.log(`Study FAC.`);
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log(`Study Software Requirements.`);
+        break;
+    case 'friday':
+    case 'saturday':
+    case 'sunday':
+        console.log(`It's party time!`);
+        break;
+    default:
+        console.log(`Invalid day.`);
+        break;
+}
+
+
+// Little Challenge
+
+if (day === 'monday') {
+    console.log(`Study data structures.`);
+} else if (day === 'tuesday') {
+    console.log(`Study FAC.`);
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log(`Study Software Requirements.`);
 } else {
-    console.log('Someone else should drive.');
+    if (day === 'friday' || day === 'saturday' || day === 'sunday') {
+        console.log(`It's party time!`);
+    } else {
+        console.log(`Invalid day.`);
+    }
 }
