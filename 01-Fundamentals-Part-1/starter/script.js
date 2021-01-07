@@ -311,6 +311,7 @@ if (day === 'monday') {
 
 /////////////// Statements and Expressions
 
+/*
 // Expressions
 3 + 4;
 2 > 3;
@@ -327,3 +328,15 @@ switch (3 + 4) {
     default:
         break;
 }
+*/
+
+/////////////// The Conditional (Ternary) Operator
+
+const age = 18;
+
+// age >= 18 ? console.log(`I like to drink wine.`) : console.log(`I like to drink water!`);
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
